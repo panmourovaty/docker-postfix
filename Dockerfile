@@ -1,5 +1,5 @@
-From ubuntu:trusty
-MAINTAINER Elliott Ye
+From ubuntu:jammy
+MAINTAINER panmourovaty
 
 # Set noninteractive mode for apt-get
 ENV DEBIAN_FRONTEND noninteractive
