@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag panmourovaty:latest
+      run: echo "${{ secrets.DOCKERPW }}" | docker login -u "panmourovaty" --password-stdin
+        docker build . --file Dockerfile --tag panmourovaty:latest
+        docker push panmourovaty:latest
