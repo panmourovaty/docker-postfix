@@ -1,5 +1,5 @@
 From ubuntu:jammy
-MAINTAINER panmourovaty
+LABEL maintainer="panmourovaty"
 
 # Set noninteractive mode for apt-get
 ENV DEBIAN_FRONTEND noninteractive
